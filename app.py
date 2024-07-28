@@ -4,12 +4,12 @@ import requests
 app = Flask(__name__)
 
 # Replace with your Telegram bot token
-TELEGRAM_BOT_TOKEN = '7473084048:AAFjZ7OxJHwTD0MsnLZ_-6y218yzjzMtSb4'
+TELEGRAM_BOT_TOKEN = '7473084048'
 # Replace with your Telegram chat ID
 TELEGRAM_CHAT_ID = '5189932629'
 
 def send_message_to_telegram(message):
-    url = f'https://api.telegram.org/bot{7473084048:AAFjZ7OxJHwTD0MsnLZ_-6y218yzjzMtSb4}/sendMessage'
+    url = f'https://api.telegram.org/bot{7473084048}/sendMessage'
     payload = {
         'chat_id': 5189932629,
         'text': message
